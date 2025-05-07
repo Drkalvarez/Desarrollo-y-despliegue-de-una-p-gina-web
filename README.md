@@ -1,4 +1,4 @@
-# 🌐 Página Web Simple con Firebase Hosting
+# 🌐 Página Web con Firebase Hosting
 
 Este es mi trabajo sobre el desarrollo y el despliegue de una pagina web con
 **Firebase Hosting** 🚀.

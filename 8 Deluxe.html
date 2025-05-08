@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comprar: Mario Kart 8 Deluxe</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="cabecera">
+  <div class="top-nav" style="position: relative;">
+    <h1 class="logo"><i>GAMESTORE</i></h1>
+    <div class="top-links">
+      <a href="#">Cartera: <span id="wallet-balance" style="color: #4caf50;">57€</span></a>
+      <a href="#">Carrito 🛒 <span id="cart-count" style="color: #f26a2e;">0</span></a>
+      <a href="mailto:adrianalvarezpajares@gmail.com">Soporte 24/7</a>
+      <div class="profile-container">
+        <div class="profile-icon" onclick="toggleProfileMenu()"><b>Perfil</b> 👤</div>
+        <div class="profile-menu" id="profileMenu">
+          <ul>
+            <li><span>👤</span> Usuario</li>
+            <li><span>⚙️</span> Ajustes</li>
+            <li><span>🔔</span> Notificaciones</li>
+            <li><span>❓</span> Preguntas Frecuentes</li>
+            <li class="logout"><span>🚪</span> Cerrar sesión</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="invisible">
+
+
+    <div class="search-bar">
+      <input type="text" placeholder="Buscar...">
+      <button type="button" class="search-toggle">
+        <img src="https://img.icons8.com/ios-filled/50/000000/search--v1.png" alt="Buscar">
+      </button>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+</div>
+
+<section class="producto" style="background-image: url('mariokart.jpg'); background-size: cover; background-position: center;">
+  <div class="producto-overlay" style="background: rgba(0,0,0,0.7); padding: 40px; display: flex; gap: 40px; color: #fff;">
+
+    <div class="producto-imagen" style="flex: 1;">
+      <img src="marioc.jpg" alt="Portada del juego" style="width: 100%; border-radius: 12px;">
+    </div>
+
+    <div class="producto-detalles" style="flex: 2; display: flex; flex-direction: column; gap: 16px;">
+      <h2>Mario Kart 8 Deluxe</h2>
+      <p style="color: #4caf50;">✔ En stock · Descarga digital</p>
+      <p class="precio" style="font-size: 2rem; color: #f26a2e;">59.46€</p>
+
+      <div class="botones-compra" style="display: flex; gap: 12px; margin-top: 10px;">
+        <button class="card-button add-to-cart">🛒</button>
+        <button class="card-button" style="flex: 1; background: #f26a2e; color: white;">Comprar</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="resumen-especificaciones">
+
+  <div class="resumen-juego">
+    <h3>Sinopsis</h3>
+    <p>
+    Mario Kart 8 Deluxe es un juego de carreras reconocible al instante, el octavo de esta serie de Nintendo. Cuenta con el icónico fontanero, Mario, y todos sus amigos que aparecen en los juegos de Nintendo: Yoshi, la princesa Peach, Bowser y, por supuesto, Luigi, el hermano de Mario, además de muchos otros. Hay cuarenta y dos personajes para elegir, muchos de ellos reconocibles al instante debido a su presencia en la cultura popular.
+    </p>
+  </div>
+
+  <div class="especificaciones-juego">
+    <h3>Especificaciones</h3>
+    <ul>
+      <li><strong>Género:</strong> Acción, Carreras</li>
+      <li><strong>Distribuidor:</strong> Nintendo</li>
+      <li><strong>PEGI:</strong> PEGI 3</li>
+      <li><strong>Lanzamiento:</strong> 28 abril 2017</li>
+    </ul>
+
+    <h4>Calificaciones ⭐⭐⭐⭐⭐</h4>
+  </div>
+
+</section>
+
+<section class="galeria">
+    <h3>Imágenes del juego</h3>
+  
+    <div class="galeria-container">
+  
+      <div class="imagen-grande">
+        <img src="mariok1.jpg" alt="Imagen grande" id="imagenGrande">
+      </div>
+  
+      <div class="miniaturas">
+        <img src="mariok2.jpg" alt="Imagen 1" class="miniatura">
+        <img src="mariok3.jpg" alt="Imagen 2" class="miniatura">
+        <img src="mariok4.jpg" alt="Imagen 3" class="miniatura">
+        <img src="mariok5.jpg" alt="Imagen 4" class="miniatura">
+      </div>
+  
+    </div>
+  </section>
+  
+
+<script src="funciones.js"></script>
+</body>
+</html>

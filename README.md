@@ -5,16 +5,25 @@ Este es mi trabajo sobre el desarrollo y el despliegue de una pagina web con
 
 ## Vista previa
 
-![Captura de la página](https://via.placeholder.com/800x400.png?text=Captura+de+la+web)
+![Pagina](/assets/pagina.png)
 
 ## 🛠️ Tecnologías utilizadas
 
 - 🧾 **HTML**
-- ☁️ **Firebase Hosting**
-- 🐙 **GitHub**
+- 🇨 **CSS**
+- 🔥 **Firebase Hosting**
+- 😺 **GitHub**
 
 ## 🚀 Enlace al sitio en vivo
 
-🔗 [https://nombre-proyecto.web.app](https://nombre-proyecto.web.app)
+🔗 [https://gamestore-aap.web.app/](https://gamestore-aap.web.app/)
 
-## 📂 Estructura del proyecto
+
+## FUTUROS CAMBIOS ##
+
+- [x] Subir la pagina 
+- [x] Crear Productos 
+- [x] Agregar navegacion 
+- [ ] Vista de movil
+- [x] Metodos de pago
+- [ ] Agregar menu de perfil funcional 

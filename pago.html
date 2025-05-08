@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Pago - GAMESTORE</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="pago-header">
+    <h1 class="pago-logo">GAMESTORE</h1>
+    <p class="pago-seguro">Pago seguro</p>
+  </div>
+  <br>
+
+  <main class="pago-contenedor">
+    <div class="pago-imagen-izquierda">
+      <img src="anuncio1.jpg" alt="Imagen izquierda">
+    </div>
+
+    <form action="pagado.html">
+      <section class="pago-facturacion">
+        <h2 class="pago-titulo">Dirección de facturación</h2>
+        <div class="pago-facturacion-formulario">
+          <label>Nombre</label>
+          <input type="text" placeholder="Nombre completo" required>
+
+          <label>Dirección</label>
+          <input type="text" placeholder="Calle, número, piso..." required>
+
+          <label>Ciudad</label>
+          <input type="text" placeholder="Ciudad" required>
+
+          <label>Provincia</label>
+          <input type="text" placeholder="Provincia" required>
+
+          <label>Código postal</label>
+          <input type="text" placeholder="Código postal" required>
+
+          <label>País</label>
+          <input type="text" placeholder="País" required>
+        </div>
+      </section>
+
+      <section class="pago-metodos">
+        <h2 class="pago-titulo">Métodos de pago</h2>
+        <div class="pago-metodos-box">
+          <div class="pago-tarjeta">
+            <img src="https://img.icons8.com/color/48/visa.png" alt="VISA">
+            <input type="text" placeholder="Número de tarjeta" required>
+          </div>
+
+          <div class="pago-formulario">
+            <label>Fecha de expiración</label>
+            <input type="text" placeholder="MM/AA" required>
+
+            <label>Código de seguridad</label>
+            <input type="text" placeholder="3 dígitos" required>
+          </div>
+        </div>
+      </section>
+
+      <aside class="pago-resumen">
+        <h2 class="pago-titulo">Resumen</h2>
+        <div class="pago-resumen-box">
+          <p id="nombre-juego">Grand Theft Auto V (Xbox Series X|S)</p>
+          <p><strong id="precio-juego">17,46 €</strong></p>
+        </div>
+
+        <p>IVA (0%): 0 €</p>
+        <p><strong>Total: <span id="total-juego">17,46 €</span></strong></p>
+
+        <button class="pago-btn-pagar" type="submit">Pagar</button>
+
+        <p class="pago-terminos">Al hacer clic en pagar, aceptas nuestros términos y condiciones.</p>
+      </aside>
+    </form>
+
+    <div class="pago-imagen-derecha">
+      <img src="anuncio2.jpg" alt="Imagen derecha">
+    </div>
+  </main>
+
+<script>
+
+const params = new URLSearchParams(window.location.search);
+const titulo = params.get('titulo');
+const precio = params.get('precio');
+
+if (titulo && precio) {
+  document.getElementById('nombre-juego').textContent = titulo;
+  document.getElementById('precio-juego').textContent = precio;
+  document.getElementById('total-juego').textContent = precio;
+}
+</script>
+
+<script src="funciones.js"></script>
+</body>
+</html>

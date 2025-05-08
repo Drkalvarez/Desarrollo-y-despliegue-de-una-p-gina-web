@@ -16,7 +16,7 @@ Este es mi trabajo sobre el desarrollo y el despliegue de una pagina web con
 
 ## 🚀 Enlace al sitio en vivo
 
-🔗 [https://gamestore-aap.web.app/](https://gamestore-aap.web.app/){target="_blank"}
+🔗 [https://gamestore-aap.web.app/](https://gamestore-aap.web.app/)
 
 
 ## FUTUROS CAMBIOS ##

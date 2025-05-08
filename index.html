@@ -1,11 +1,189 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
+  <title>GameStore</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hola adri</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>HOLA MUNDO 3</h1>
+
+<header>
+  <div class="cabecera">
+    <div class="top-nav" style="position: relative;">
+      <h1 class="logo"><i>GAMESTORE</i></h1>
+      <div class="top-links">
+        <a href="#">Cartera: <span id="wallet-balance" style="color: #4caf50;">57€</span></a>
+        <a href="#">Carrito 🛒 <span id="cart-count" style="color: #f26a2e;">0</span></a>
+        <a href="mailto:adrianalvarezpajares@gmail.com">Soporte 24/7</a>
+        <div class="profile-container">
+          <div class="profile-icon" onclick="toggleProfileMenu()"><b>Perfil</b> 👤</div>
+          <div class="profile-menu" id="profileMenu">
+            <ul>
+              <li><span>👤</span> Usuario</li>
+              <li><span>⚙️</span> <a href="ajustes.html">Ajustes</a></li>
+              <li><span>🔔</span> <a href="notificaciones.html">Notificaciones</a></li>
+              <li><span>❓</span> <a href="faq.html">Preguntas Frecuentes</a></li>
+              <li class="logout"><span>🚪</span> <a href="https://www.google.com">Cerrar sesión</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="filter-bar">
+      <div class="platform" data-platform="pc">🖥️ PC</div>
+      <div class="platform" data-platform="playstation">🎮 PlayStation</div>
+      <div class="platform" data-platform="xbox">🕹️ Xbox</div>
+      <div class="platform" data-platform="nintendo">🎮 Nintendo</div>
+
+      <div class="search-bar">
+        <input type="text" placeholder="Buscar...">
+        <button type="button" class="search-toggle">
+          <img src="https://img.icons8.com/ios-filled/50/000000/search--v1.png" alt="Buscar">
+        </button>
+      </div>
+      
+    </div>
+  </div>
+    <section class="main-promo" style="background-image: url('assets/expedition.jpg');">
+      <div class="promo-overlay">
+        <div class="promo-text">
+          <h2>Clair Obscur: Expedition 33</h2>
+          <p><span class="discount">-40%</span> <span class="price">29.99€</span></p>
+          <div class="card-buttons">
+          <button class="card-button add-to-cart">🛒</button>
+          <button class="card-button" onclick="window.location.href='Expedition 33.html'">Ver más</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+  </header>
+<br>
+<br>
+<br>
+  <main style="margin-top: 4rem;">
+    <h2 class="section-title">Tendencias 🔥</h2>
+<br>
+    <div class="product-grid">
+  
+      <div class="card" data-platform="playstation" style="background-image: url('assets/tlou2.jpg');">
+        <div class="card-content">
+          <h3>The Last Of Us Part II Remastered</h3>
+          <p class="price">35.69€</p>
+          <div class="card-buttons">
+            <button class="card-button add-to-cart">🛒</button>
+            <button class="card-button" onclick="window.location.href='The Last Of Us Part II Remastered.html'">Ver más</button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="card" data-platform="pc" style="background-image: url('assets/33.jpg');">
+        <div class="card-content">
+          <h3>Clair Obscur: Expedition 33</h3>
+          <p><span class="discount">-40%</span> <span class="price">29.99€</span></p>
+          <div class="card-buttons">
+            <button class="card-button add-to-cart">🛒</button>
+            <button class="card-button" onclick="window.location.href='Expedition 33.html'">Ver más</button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="card" data-platform="xbox" style="background-image: url('assets/night.jpg');">
+        <div class="card-content">
+          <h3>Elden Ring Nightreign</h3>
+          <p class="price">31.79€</p>
+          <div class="card-buttons">
+            <button class="card-button add-to-cart">🛒</button>
+            <button class="card-button" onclick="window.location.href='Nightreign.html'">Ver más</button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="card" data-platform="playstation" style="background-image: url('assets/nba.jpg');">
+        <div class="card-content">
+          <h3>NBA 2K25 All-Star Edition</h3>
+          <p class="price">22.68€</p>
+          <div class="card-buttons">
+            <button class="card-button add-to-cart">🛒</button>
+            <button class="card-button" onclick="window.location.href='2K25.html'">Ver más</button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="card" data-platform="nintendo" style="background-image: url('assets/mariow.jpg');">
+        <div class="card-content">
+          <h3>Super Mario Bros. Wonder</h3>
+          <p class="price">55.79€</p>
+          <div class="card-buttons">
+            <button class="card-button add-to-cart">🛒</button>
+            <button class="card-button" onclick="window.location.href='MBWonder.html'">Ver más</button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="card" data-platform="nintendo" style="background-image: url('assets/marioc.jpg');">
+        <div class="card-content">
+          <h3>Mario Kart 8 Deluxe</h3>
+          <p class="price">59.46€</p>
+          <div class="card-buttons">
+            <button class="card-button add-to-cart">🛒</button>
+            <button class="card-button" onclick="window.location.href='8 Deluxe.html'">Ver más</button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="card" data-platform="pc" style="background-image: url('assets/mcft.jpg');">
+        <div class="card-content">
+          <h3>Minecraft: Java & Bedrock Edition</h3>
+          <p class="price">15.49€</p>
+          <div class="card-buttons">
+            <button class="card-button add-to-cart">🛒</button>
+            <button class="card-button" onclick="window.location.href='Minecraft.html'">Ver más</button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="card" data-platform="xbox" style="background-image: url('assets/doom.jpg');">
+        <div class="card-content">
+          <h3>Doom: The Dark Ages Premium Edition + Acces...</h3>
+          <p class="price">84.99€</p>
+          <div class="card-buttons">
+            <button class="card-button add-to-cart">🛒</button>
+            <button class="card-button" onclick="window.location.href='Doom.html'">Ver más</button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="card" data-platform="playstation" style="background-image: url('assets/gta.jpg');">
+        <div class="card-content">
+          <h3>Grand Theft Auto V</h3>
+          <p class="price">17.46€</p>
+          <div class="card-buttons">
+            <button class="card-button add-to-cart">🛒</button>
+            <button class="card-button" onclick="window.location.href='GTAV.html'">Ver más</button>
+          </div>
+        </div> 
+      </div>
+      <div class="no-results" style="display: none;">No se han encontrado resultados</div>
+    </div>
+  </main>
+
+    <div class="pagination">
+      <span class="page active">1</span>
+      <span class="page">2</span>
+      <span class="page">3</span>
+      <span>. . .</span>
+      <span class="page">225</span>
+      <span class="page">→</span>
+    </div>
+    <br>
+  <footer>
+    © 2025 GameStore. Todos los derechos reservados.
+  </footer>
 </body>
+<script src="funciones.js"></script>
 </html>
